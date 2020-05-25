@@ -21,7 +21,6 @@ class App extends React.Component<AppProps, AppState> {
     return (
       <div className='container'>
         <Header />
-        <HomeScreen />
         <CounterWidget />
       </div>
     );

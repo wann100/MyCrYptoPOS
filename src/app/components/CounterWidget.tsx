@@ -28,21 +28,22 @@ const CounterWidget: React.FC = () => {
 
   // Render Component
   return (
-    <div>
+    <div className='counter-widget'>
       <p>
-        Click below button to update the counter state using 🔥 Hot Module
-        Replacement :
+        Click below buttons to update the various counter state of Redux using
+        🔥 <span title='Hot Module Replacement'>HMR</span> :
       </p>
+
       <button onClick={(): void => handleButtonClick('normal')}>
         Normal Counter &nbsp;
         <span>{counter.normal}</span>
       </button>
-      &nbsp;&nbsp;&nbsp;
+
       <button onClick={(): void => handleButtonClick('even')}>
         Even Counter &nbsp;
         <span>{counter.even}</span>
       </button>
-      &nbsp;&nbsp;&nbsp;
+
       <button onClick={(): void => handleButtonClick('odd')}>
         Odd Counter &nbsp;
         <span>{counter.odd}</span>
