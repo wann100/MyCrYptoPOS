@@ -31,7 +31,7 @@ This project makes use of latest packages like `electron`, `react`, `redux`, `ty
 Clone the repository on your hard drive :
 
 ```bash
-git clone https://github.com/codesbiome/electron-react-webpack-typescript-2020
+git clone -b redux --single-branch https://github.com/codesbiome/electron-react-webpack-typescript-2020
 
 cd electron-react-webpack-typescript-2020
 ```
