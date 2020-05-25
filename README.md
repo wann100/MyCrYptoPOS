@@ -15,6 +15,8 @@ This project makes use of latest packages like `electron`, `react`, `typescript`
 - 📸 Image Loader
 - 🧹 ESLint
 - 💪 ReactJS
+- 📦 Redux & React Redux Toolkit
+- 📡 React Router
 - 🔱 Webpack & Configuration
 - 🧩 Aliases for project paths
 - 🔥 Hot Module Replacement (Live Reload)
