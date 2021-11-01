@@ -13,4 +13,6 @@ const app = <Application title='ERWT Boilerplate' version='4.0.0' />;
 ReactDOM.render(app, document.getElementById('app'));
 
 // Hot module replacement
-if (inDev() && module.hot) module.hot.accept();
+if (inDev() && module.hot){
+    module.hot.accept();
+}
