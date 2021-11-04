@@ -49,7 +49,7 @@ const Drawer: React.FC<DrawerProps> = ({ translation }) => {
             <div className={styles.menuIcon}>
               <TabletTwoTone />
             </div>
-            <div className={styles.menuLabel}>{t('admin.menu.exitLabel')}</div>
+            <div className={styles.menuLabel} style={{color:'black'}}>{t('admin.menu.exitLabel')}</div>
           </Link>
         </div>
       </div>

@@ -16,6 +16,7 @@ type TerminalState = {
 
 const Terminal: React.FC = () => {
   const [context, actions, views, helpers] = useContext(appContext);
+
   const [state, setState] = useState<TerminalState>({
     isOpenReceiptsDialog: false,
     isOpenReportDialog: false,
@@ -24,12 +25,12 @@ const Terminal: React.FC = () => {
 
   const { isLoading, categories, currentCategoryId, currentOrderId, currentItemId, orders, items, settings } = context;
   const { translation } = helpers;
-  const { t } = translation;
+
 
   useEffect(() => {
-    const title = [t('terminal.title')];
-    setDocumentTitle(title);
-  }, [t]);
+
+    document.title = "CryptoPOS"
+  }, []);
 
   const updateState = (data: Partial<TerminalState>) => setState({ ...state, ...data });
   const currentOrder = orders.find((order: { id: any; }) => currentOrderId === order.id) || null;
@@ -94,7 +95,7 @@ const Terminal: React.FC = () => {
         {renderReportDialog}
         {renderItemEditor}
         {renderDrawer}
-        alsdfkjalsfjkalsfjalsfdjlasjkfl
+
         <div className={styles.root}>
           <div className={styles.content}>
             <Receipt

@@ -1,26 +1,38 @@
 import i18n from 'i18next';
-import Backend from 'i18next-xhr-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
+import backend from 'i18next-xhr-backend';
+import translation from './locales/en/translation.json';
+export const resources = {
+  en: {
+    translation,
+
+  },
+} as const;
+const userLanguage = window.navigator.language;
 
 i18n
-  .use(Backend)
-  .use(LanguageDetector)
+  .use(backend)
   .use(initReactI18next)
   .init({
-    detection: {
-      order: ['querystring', 'navigator'],
-    },
-    fallbackLng: {
-      default: ['en'],
-    },
+    lng: localStorage.getItem('language') || userLanguage || 'en',
+    fallbackLng: 'en',
+
+    debug: true,
     keySeparator: '.',
     interpolation: {
       escapeValue: false,
     },
     react: {
-      wait: true, // wait for loaded in every translated hoc
+      wait: true,
+      useSuspense: false,
     },
+    backend: {
+      loadPath: '/locales/{{ns}}/{{lng}}.json',
+    },
+    resources
   });
 
 export default i18n;
+
+
+

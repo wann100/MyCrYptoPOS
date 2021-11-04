@@ -2,7 +2,7 @@ import React, { useEffect, useCallback } from 'react';
 import { formatMoney, toFixed } from 'accounting';
 import { BackspaceOutlineTwoTone } from '../../../common/icons/index';
 import styles from './numpad.module.css';
-
+import { hot } from 'react-hot-loader';
 type NumpadProps = {
   value?: string;
   expected?: number;
@@ -127,4 +127,4 @@ const Numpad: React.FC<NumpadProps> = ({ onChange, value = '0.00', expected = 0 
   );
 };
 
-export default Numpad;
+export default hot(module)(Numpad);

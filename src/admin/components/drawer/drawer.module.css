@@ -31,6 +31,9 @@
   cursor: pointer;
   user-select: none;
 }
+.menuLabel{
+  color:'black'
+}
 
 .menuItem:hover {
   background-color: var(--palette-action-hover);

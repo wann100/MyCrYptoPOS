@@ -2,16 +2,11 @@ import React, { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SearchTwoTone } from '../../../common/icons';
 import styles from './commonLayout.module.css';
+import { hot } from 'react-hot-loader';
+import {CommonLayoutProps} from './commonlayoutprops'
 
-export type CommonLayoutProps = {
-  head: ReactNode;
-  body: ReactNode;
-  isFilterable?: boolean;
-  filterValue?: string;
-  onChangeFilterValue?: (value: string) => void;
-};
 
-export const CommonLayout: React.FC<CommonLayoutProps> = ({
+const CommonLayout: React.FC<CommonLayoutProps> = ({
   head,
   body,
   isFilterable = false,
@@ -50,3 +45,4 @@ export const CommonLayout: React.FC<CommonLayoutProps> = ({
     </div>
   );
 };
+export default hot(module)(CommonLayout)

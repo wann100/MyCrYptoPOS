@@ -1,9 +1,4 @@
-export {default as SvgIcon} from './svgIcon/svgIconModule';
 
-export { default as Breadcrumbs } from './breadcrumbs/breadcrumbs';
-export { default as LoadScreen } from './loadScreen/loadScreen';
-export { default as PrintReceipt } from './printReceipt/printReceipt';
-export { default as TaxName } from './taxName/taxName';
 type FontSize = 'inherit' | 'default' | 'small' | 'large';
 
  export type SvgIconProps = {
@@ -15,4 +10,3 @@ type FontSize = 'inherit' | 'default' | 'small' | 'large';
   shapeRendering?: string; // The shape-rendering attribute. If you are having issues with blurry icons you should investigate this property.
   viewBox?: string; // Allows you to redefine what the coordinates without units mean inside an SVG element.
 };
-

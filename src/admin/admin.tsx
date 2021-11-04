@@ -10,6 +10,7 @@ import styles from './admin.module.css';
 import { hot } from 'react-hot-loader';
 const Admin: React.FC = () => {
   const { state: context, actions, helpers, views } = useContext(appContext);
+  // console.log("mamadou app",appContext)
   const { isLoading, categories, settings, items, taxes } = context;
   const { translation } = helpers;
   const { t } = translation;
