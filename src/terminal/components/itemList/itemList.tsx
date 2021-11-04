@@ -5,6 +5,7 @@ import { getVisibleCategories, getVisibleItems } from '../../../common/assets';
 import { Card, Search } from './components';
 import styles from './itemList.module.css';
 import { hot } from 'react-hot-loader';
+import background from "./wood_texture.png";
 type ItemListProps = {
   categories: Category[];
   currentCategoryId: string;
@@ -68,7 +69,7 @@ const ItemList: React.FC<ItemListProps> = ({ translation, categories, items, cur
   );
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root}  style={{ backgroundImage: `url(${background})` }}>
       <div className={styles.head}>
         <Breadcrumbs categories={categories} currentCategoryId={currentCategoryId} onChange={changeCurrentCategory} />
         <Search onChange={setSearchTerm} />

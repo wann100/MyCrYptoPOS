@@ -15,7 +15,7 @@ module.exports = {
   port: 9000
 },
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json','.scss'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json','.scss','.png','.jpg'],
     alias: require('./webpack.aliases'),
     fallback: {
       "fs": false
