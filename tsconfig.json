@@ -3,21 +3,12 @@
     "jsx": "react",
     "allowJs": true,
     "target": "ES6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
-    "strict": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "suppressImplicitAnyIndexErrors": true,
-    "noFallthroughCasesInSwitch": true,
     "outDir": "dist",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -27,8 +18,5 @@
       "@src/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*", "tools/**/*","src"],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*", "tools/**/*"]
 }

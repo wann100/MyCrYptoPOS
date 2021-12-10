@@ -4,6 +4,4 @@ const { createWebpackAliases } = require('./webpack.helpers');
 module.exports = createWebpackAliases({
   '@assets': 'assets',
   '@src': 'src',
-  '@locales':'locales',
-  '@public':'public'
 });
