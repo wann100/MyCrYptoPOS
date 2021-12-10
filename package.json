@@ -23,18 +23,12 @@
     "ERWT"
   ],
   "author": {
-    "name": "codesbiome",
-    "url": "https://github.com/codesbiome"
+    "name": "Mamadou Wann",
+    "url": "https://github.com/wann100/"
   },
-  "contributors": [
-    {
-      "name": "guasam",
-      "url": "https://github.com/guasam"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/codesbiome/electron-react-webpack-typescript-2020"
+    "url": "https://github.com/wann100/MyCrYptoPOS"
   },
   "license": "MIT",
   "config": {
@@ -75,6 +69,7 @@
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.1",
     "electron-squirrel-startup": "^1.0.0",
+    "firebase": "^9.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
