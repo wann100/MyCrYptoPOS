@@ -7,7 +7,7 @@ module.exports = {
   },
   plugins: plugins,
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css','.scss','.png','.jpg'],
     alias: {
       // React Hot Loader Patch
       'react-dom': '@hot-loader/react-dom',

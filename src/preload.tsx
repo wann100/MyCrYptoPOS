@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Packages version
   for (const type of ['chrome', 'node', 'electron', 'erwt']) {
-    const version =
+    const version:any =
       type == 'erwt'
         ? process.env['npm_package_version']
         : process.versions[type];
