@@ -27,21 +27,9 @@
     "ERWT"
   ],
   "author": {
-<<<<<<< HEAD
     "name": "Mamadou Wann",
     "url": "https://github.com/wann100/"
   },
-=======
-    "name": "mamadou wann",
-    "url": ""
-  },
-  "contributors": [
-    {
-      "name": "wann100",
-      "url": "https://github.com/wann100"
-    }
-  ],
->>>>>>> fd4bf156be22e6656f656287ed881a68104f48e7
   "repository": {
     "type": "git",
     "url": "https://github.com/wann100/MyCrYptoPOS"
@@ -140,12 +128,7 @@
     "css-loader": "^6.5.0",
     "date-fns": "2.16.1",
     "electron-squirrel-startup": "^1.0.0",
-<<<<<<< HEAD
     "firebase": "^9.6.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-=======
-    "i18next": "19.8.2",
     "i18next-browser-languagedetector": "6.0.1",
     "i18next-http-backend": "^1.3.1",
     "i18next-xhr-backend": "3.2.2",
@@ -155,12 +138,11 @@
     "react": "16.13.1",
     "react-date-range": "^1.0.3",
     "react-dom": "^17.0.2",
-    "react-i18next": "11.7.3",
+    "react-i18next": "11.13.0",
     "react-print-tool": "3.0.0",
     "react-router-dom": "5.2.0",
     "react-toastify": "^6.0.9",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0"
->>>>>>> fd4bf156be22e6656f656287ed881a68104f48e7
   }
 }
