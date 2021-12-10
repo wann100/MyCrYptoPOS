@@ -1,6 +1,5 @@
 import React , { useEffect, useState } from "react";
-import PropTypes from 'prop-types'
-import styles from './itemList.module.css';
+import styles from './login.module.css';
 import { Link, useHistory } from "react-router-dom";
 import { auth, signInWithEmailAndPassword, signInWithGoogle } from '@src/firebase';
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -45,9 +44,6 @@ const Login:React.FC = () => {
           </button>
           <div>
             <Link to="/reset">Forgot Password</Link>
-          </div>
-          <div>
-            Don't have an account? <Link to="/register">Register</Link> now.
           </div>
         </div>
       </div>
