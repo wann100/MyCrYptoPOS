@@ -1,11 +1,35 @@
-# MyCryptoPos
+# Electron React Webpack Typescript - Boilerplate 2021
 
-A POS system that uses new technology and can take crypto transactions.
+ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
+
 ## Screenshot
 
-
+<img src="assets/images/screen4.png" />
 
 <br>
+
+## Core Features
+
+- 🌟 Electron
+- 🌀 TypeScript
+- ⚛️ React
+- 🛶 LESS Loader
+- 🎨 CSS Loader
+- 📸 Image Loader
+- 🆎 Font Loader
+- 🧹 ESLint
+- 📦 Electron Forge
+- 🔱 Webpack & Configuration
+- 🧩 Aliases for project paths
+- 🔥 Hot Module Replacement (Live Reload)
+- 🎁 Package Bundling (Distribution / Release)
+
+<br />
+
+## Installation
+
+#### To install the ERWT boilerplate you need to run following commands
+
 Clone the repository :
 
 ```bash

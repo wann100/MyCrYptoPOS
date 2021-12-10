@@ -19,7 +19,7 @@ module.exports = {
       // Windows applications and is therefore the most user friendly you can get.
       name: '@electron-forge/maker-squirrel',
       config: {
-        name: 'MyCrYptoPOS',
+        name: 'electron-react-typescript-webpack-2021',
       },
     },
     {
@@ -53,7 +53,7 @@ module.exports = {
         devContentSecurityPolicy: "",
         // Ports
         port: 3000, // Webpack Dev Server port
-        loggerPort: 3001, // Logger port
+        loggerPort: 9000, // Logger port
         // Main process webpack configuration
         mainConfig: path.join(rootDir, 'tools/webpack/webpack.main.js'),
         // Renderer process webpack configuration
@@ -79,7 +79,7 @@ module.exports = {
           ],
         },
         devServer: {
-          liveReload: true,
+          liveReload: false,
         },
       },
     ],

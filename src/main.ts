@@ -14,17 +14,16 @@ const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: 'white',
+    backgroundColor: '#171b21',
     show: false,
     autoHideMenuBar: true,
     webPreferences: {
-      webSecurity: false,
-      nodeIntegration: true,
+      nodeIntegration: false,
       nativeWindowOpen: true,
-      contextIsolation: false,
+      contextIsolation: true,
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
-      preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY, 
+      preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
   });
 

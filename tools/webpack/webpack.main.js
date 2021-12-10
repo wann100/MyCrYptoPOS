@@ -1,6 +1,3 @@
-const cleanWebpackPlugin = require("clean-webpack-plugin");
-
-
 module.exports = {
   /**
    * This is the main entry point for your application, it's the first file
@@ -11,18 +8,9 @@ module.exports = {
   module: {
     rules: require('./webpack.rules'),
   },
-  devServer: {
-  port: 9000
-},
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json','.scss','.png','.jpg'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json'],
     alias: require('./webpack.aliases'),
-    fallback: {
-      "fs": false
-  },
   },
   stats: 'minimal',
-
-
-  
 };
