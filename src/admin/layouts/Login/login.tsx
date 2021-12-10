@@ -45,6 +45,7 @@ const Login:React.FC = () => {
           <div>
             <Link to="/reset">Forgot Password</Link>
           </div>
+
         </div>
       </div>
     );
